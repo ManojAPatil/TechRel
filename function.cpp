@@ -1,20 +1,29 @@
 #include<iostream>
+#include<string>
 using namespace std;
- int a,b;
-void addition();
+ 
+void addition(string fullName);
+void addition(){
+	int a,b,c;
+	cout<<"first no:"<<"\n";
+	cin>>a;
+	cout<<"second no:"<<"\n";
+	cin>>b;
+c=a+b;
+cout<<"addition:"<<c<<"\n";
+}
 int main()
 {
    
-   cout<<"Enter first number\n";
-   cin>>a;
-   cout<<"Enter second number\n";
-   cin>>b;
+   addition("manoj");
+   addition("manoj");
+   addition("manoj");
    addition();
    return 0;
 }
-void addition()
+void addition(string fullName)
 {
-    a+=b;
-   cout<<"addition :"<<a<<"\n";;
+   // c=a+b;
+   cout<<"full name :"<<fullName<<"patil\n";;
    }
 
